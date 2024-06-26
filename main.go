@@ -9,9 +9,9 @@ import (
 
 func main() {
 	indexPath, _ := os.Getwd()
+	indexPath = path.Join(indexPath, "test/tmp/index.js")
 
-	fmt.Println(path.Join(indexPath, "tmp/index.js"))
-	return
+	fmt.Println(indexPath)
 	//indexPath := internal.GetWebPCIndexPosition()
 	fileStr, err := internal.ReadFile(indexPath)
 	if err != nil {
