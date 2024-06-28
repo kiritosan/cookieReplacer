@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject1/internal"
+	"cookieReplacer/internal"
 	"fmt"
 	"strings"
 )

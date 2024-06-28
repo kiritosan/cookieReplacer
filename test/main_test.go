@@ -1,7 +1,7 @@
 package test
 
 import (
-	"awesomeProject1/internal"
+	"cookieReplacer/internal"
 	"fmt"
 	"github.com/atotto/clipboard"
 	"log"

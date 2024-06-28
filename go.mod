@@ -1,4 +1,4 @@
-module awesomeProject1
+module cookieReplacer
 
 go 1.22
 
