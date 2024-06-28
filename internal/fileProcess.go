@@ -37,6 +37,12 @@ func ReplaceText(filePath, pattern, targetText string) string {
 		log.Fatal("Error compiling regex:", err)
 	}
 
+	// 检查是否存在匹配项
+	match := re.FindString(fileStr)
+	if match == "" {
+		log.Println("No match found.")
+	}
+
 	// 使用正则表达式进行替换
 	newFileStr := re.ReplaceAllString(fileStr, targetText)
 
